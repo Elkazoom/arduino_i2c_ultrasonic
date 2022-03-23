@@ -1,6 +1,5 @@
-###################################################################
-###############	    ARDUINO MASTER TESTE       ####################
-###################################################################
+ARDUINO MASTER TESTE 
+
 
 /* 
 ARDUINO MASTER
@@ -15,8 +14,8 @@ ARDUINO MASTER
 
 #include <Wire.h>                                                         //Biblioteca I2C necessária para fazer a comunicação
 
-# define SLAVE1_ADDRESS 11                                                //Define o endereço do primeiro arduino escravo
-# define SLAVE2_ADDRESS 12                                                //Define o endereço do segundo arduino escravo
+#define SLAVE1_ADDRESS 11                                                //Define o endereço do primeiro arduino escravo
+#define SLAVE2_ADDRESS 12                                                //Define o endereço do segundo arduino escravo
 
 int dado_a_ser_enviado = 14;                                              //Variável que armazena o valor do dados que será enviado
 int dado_recebido = 0;                                                    //Variável que armazena o valor do dado que será recebido
@@ -58,9 +57,9 @@ void loop()   //Inicia o Loop infinito
  delay(100);                                                              //Aguarda para o envio para iniciar o novo loop
 }
 
-###################################################################
-###############	   ARDUINO ESCRAVO TESTE	###################
-###################################################################
+
+ARDUINO ESCRAVO TESTE
+
 
 /* 
 ARDUINO ESCRAVO
@@ -117,9 +116,7 @@ void receiveEvents(int numero_de_bytes_recebido)                                
  dado_a_ser_enviado = (dado_recebido+1);                                        //Atualiza a variável "dado recebido" para ser enviado novamente durante a interrupção "requestEvents"
 }
 
-###################################################################
-###############	   ARDUINO MASTER ULTRASOM	###################
-###################################################################
+ARDUINO MASTER ULTRASOM
 
 /* 
 ARDUINO MASTER
@@ -134,9 +131,9 @@ ARDUINO MASTER
 
 #include <Wire.h>                                                         //Biblioteca I2C necessária para fazer a comunicação
 
-# define SLAVE1_ADDRESS 11                                                //Define o endereço do primeiro arduino escravo
-# define SLAVE2_ADDRESS 12                                                //Define o endereço do segundo arduino escravo
-# define SLAVE3_ADDRESS 13  
+#define SLAVE1_ADDRESS 11                                                //Define o endereço do primeiro arduino escravo
+#define SLAVE2_ADDRESS 12                                                //Define o endereço do segundo arduino escravo
+#define SLAVE3_ADDRESS 13  
 
 int dado_a_ser_enviado = 14;                                              //Variável que armazena o valor do dados que será enviado
 int dado_recebido = 0;                                                    //Variável que armazena o valor do dado que será recebido
@@ -163,9 +160,8 @@ void loop()   //Inicia o Loop infinito
 }
 
 
-###################################################################
-###############	   ARDUINO ESCRAVO ULTRASOM	###################
-###################################################################
+ARDUINO ESCRAVO ULTRASOM
+
 
 /* 
 ARDUINO ESCRAVO
